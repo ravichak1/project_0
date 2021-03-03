@@ -95,16 +95,28 @@ $font: arial, sans-serif;
                 vertical-align: middle;
                 border-radius: 50px;
                 border: 1px solid black;
-                
+                transition: all 0s ease-in-out;
             }
 
             input[type="text"]:hover{
                 width: 500px;
-                height: 30px;
+                height: 40px;
                 vertical-align: middle;
                 border-radius: 50px;
                 border: 1px solid black;
-                
+                box-shadow: 5%;
+                transform: scale(1.1);
+            }
+            input[type="text"]:focus{
+                width: 500px;
+                height: 40px;
+                vertical-align: middle;
+                border-radius: 50px;
+                border: 1px solid black;
+                box-shadow: 5%;
+                transform: scale(1.1);
+                outline: none;
+                font-size: 20px;
             }
         }
 
@@ -137,11 +149,11 @@ $font: arial, sans-serif;
 
 .section{
     position: relative;
-    margin-top: 110px;
+    margin-top: 120px;
     
     .section-1{
         position: absolute;
-        left: 50%;
+        left: 49%;
         transform: translate(-50%,-50%);
         height: 25px;
 

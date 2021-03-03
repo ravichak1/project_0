@@ -104,14 +104,34 @@
   vertical-align: middle;
   border-radius: 50px;
   border: 1px solid black;
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
 }
 
 .form .form-1 .search-bar input[type="text"]:hover {
   width: 500px;
-  height: 30px;
+  height: 40px;
   vertical-align: middle;
   border-radius: 50px;
   border: 1px solid black;
+  -webkit-box-shadow: 5%;
+          box-shadow: 5%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.form .form-1 .search-bar input[type="text"]:focus {
+  width: 500px;
+  height: 40px;
+  vertical-align: middle;
+  border-radius: 50px;
+  border: 1px solid black;
+  -webkit-box-shadow: 5%;
+          box-shadow: 5%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  outline: none;
+  font-size: 20px;
 }
 
 .form .form-1 .submit-button {
@@ -142,12 +162,12 @@
 
 .section {
   position: relative;
-  margin-top: 110px;
+  margin-top: 120px;
 }
 
 .section .section-1 {
   position: absolute;
-  left: 50%;
+  left: 49%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: 25px;
