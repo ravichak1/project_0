@@ -40,6 +40,14 @@
   color: dimgray;
 }
 
+.nav .nav-bar a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  padding-left: 20px;
+  font-family: arial, sans-serif;
+  color: dimgray;
+}
+
 .nav .nav-bar button {
   margin-left: 10px;
   padding: 5px 8px;
@@ -83,7 +91,7 @@
 
 .form .form-1 {
   position: absolute;
-  left: 50%;
+  left: 48%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   height: 50px;
@@ -92,7 +100,7 @@
 
 .form .form-1 .search-bar input[type="text"] {
   width: 500px;
-  height: 30px;
+  height: 40px;
   vertical-align: middle;
   border-radius: 50px;
   border: 1px solid black;
@@ -130,5 +138,31 @@
   border: none;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.section {
+  position: relative;
+  margin-top: 110px;
+}
+
+.section .section-1 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 25px;
+}
+
+.section .section-1 p {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+}
+
+.section .section-1 p a {
+  text-decoration: none;
+}
+
+.section .section-1 p a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=index.css.map */
