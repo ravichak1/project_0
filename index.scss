@@ -177,10 +177,12 @@ $font: arial, sans-serif;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(243, 239, 239);
+    background-color: rgb(231, 228, 228);
     color: black;
     text-align: left;
     height: 80px;
+    display: grid;
+    grid-template-columns: 1fr;
 
     .france{
         font-family: $font;
@@ -188,6 +190,21 @@ $font: arial, sans-serif;
         position: absolute;
         left: 2%;
         font-size: 15px;
+        height: 10px;
+        border-bottom: black;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .footer{
+        display: flex;
+        position: relative;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    
+        
     }
 }
 

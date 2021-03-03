@@ -191,10 +191,14 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f3efef;
+  background-color: #e7e4e4;
   color: black;
   text-align: left;
   height: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .above-footer .france {
@@ -203,5 +207,20 @@
   position: absolute;
   left: 2%;
   font-size: 15px;
+  height: 10px;
+  border-bottom: black;
+  width: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.above-footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=index.css.map */
