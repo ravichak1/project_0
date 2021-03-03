@@ -185,4 +185,23 @@
 .section .section-1 p a:hover {
   text-decoration: underline;
 }
+
+.above-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f3efef;
+  color: black;
+  text-align: left;
+  height: 80px;
+}
+
+.above-footer .france {
+  font-family: arial, sans-serif;
+  margin-top: 10px;
+  position: absolute;
+  left: 2%;
+  font-size: 15px;
+}
 /*# sourceMappingURL=index.css.map */

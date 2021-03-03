@@ -172,3 +172,22 @@ $font: arial, sans-serif;
     }
 }
 
+.above-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(243, 239, 239);
+    color: black;
+    text-align: left;
+    height: 80px;
+
+    .france{
+        font-family: $font;
+        margin-top: 10px;
+        position: absolute;
+        left: 2%;
+        font-size: 15px;
+    }
+}
+
