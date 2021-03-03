@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.nav .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 40px;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav-bar a {
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 20px;
+  font-family: arial, sans-serif;
+  color: dimgray;
+}
+
+.nav .nav-bar button {
+  margin-left: 10px;
+  padding: 5px 8px;
+  background-color: dodgerblue;
+  color: white;
+  font-family: arial, sans-serif;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+}
+
+.nav .nav-bar button:hover {
+  margin-left: 10px;
+  padding: 5px 8px;
+  background-color: dodgerblue;
+  color: white;
+  font-family: arial, sans-serif;
+  border: none;
+  outline: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header {
+  position: relative;
+  margin-top: 250px;
+}
+
+.header .google-image {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.form {
+  position: relative;
+  margin-top: 70px;
+}
+
+.form .form-1 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 50px;
+  margin: 20px;
+}
+
+.form .form-1 .search-bar input[type="text"] {
+  width: 500px;
+  height: 30px;
+  vertical-align: middle;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+
+.form .form-1 .search-bar input[type="text"]:hover {
+  width: 500px;
+  height: 30px;
+  vertical-align: middle;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+
+.form .form-1 .submit-button {
+  position: absolute;
+  margin: 9px;
+  left: 12%;
+}
+
+.form .form-1 .submit-button input[type="submit"] {
+  margin: 10px;
+  width: 150px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+}
+
+.form .form-1 .submit-button input[type="submit"]:hover {
+  margin: 10px;
+  width: 150px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=index.css.map */
