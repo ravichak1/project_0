@@ -3,6 +3,7 @@
     <head>
         <title>Search</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="/css/all.min.css">
     </head>
     <body>
         <!--for body grid system-->
@@ -18,7 +19,7 @@
 
             <div class="header">
                 <div class="google-image">
-                    <img src="/project_0/images/google.png" alt="google-image" height="100%" width="100%">
+                    <img src="/images/google.png" alt="google-image" height="100%" width="100%">
                 </div>
 
             </div>
@@ -26,9 +27,14 @@
             <div class="form">
                 <div class="form-1">
                     <form action="https://google.com/search">
+            
                         <div class="search-bar">
-                            <input type="text" name="q">
+                            <div class="bar">
+                                <p class="icon"><i class="fas fa-search" ></i></p>
+                                <input type="text" name="q" class="text" placeholder="google">
+                            </div>
                         </div>
+                        
                         <div class="submit-button">
                             <input type="submit" value="Google Search">
                             <input type="submit" value="I'm Feeling Lucky">

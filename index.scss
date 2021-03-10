@@ -64,18 +64,6 @@ $font: arial, sans-serif;
     }
 }
 
-.header{
-    position: relative;
-    margin-top: 250px;
-
-    .google-image{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-
-}
-
 .form{
     position: relative;
     margin-top: 70px;
@@ -89,35 +77,60 @@ $font: arial, sans-serif;
 
         .search-bar{
 
-            input[type="text"]{
-                width: 500px;
-                height: 40px;
-                vertical-align: middle;
-                border-radius: 50px;
-                border: 1px solid black;
-                transition: all 0s ease-in-out;
-            }
+            position: relative;
+            display: flex;
+            
 
-            input[type="text"]:hover{
-                width: 500px;
-                height: 40px;
-                vertical-align: middle;
-                border-radius: 50px;
+            .bar{
+                display: flex;
+                flex-direction: row;
                 border: 1px solid black;
-                box-shadow: 5%;
-                transform: scale(1.1);
-            }
-            input[type="text"]:focus{
-                width: 500px;
-                height: 40px;
-                vertical-align: middle;
+                padding: 10px;
                 border-radius: 50px;
-                border: 1px solid black;
-                box-shadow: 5%;
-                transform: scale(1.1);
-                outline: none;
-                font-size: 20px;
+
+                .icon{
+                    top: 50%;
+                    left: 0;
+                    height: 30px;
+                    width: 15px;
+                }
+
+                input[type="text"]{
+                    margin-left: 15px;
+                    font-size: 20px;
+                    width: 400px;
+                    height: 40px;
+                    vertical-align: middle;
+                    border-radius: 50px;
+                    border: 1px solid black;
+                    transition: all 0s ease-in-out;
+                    border: none;
+                }
+    
+                input[type="text"]:hover{
+                    width: 400px;
+                    height: 40px;
+                    vertical-align: middle;
+                    border-radius: 50px;
+                    border: none;
+                    box-shadow: 5%;
+                    transform: scale(1.1);
+                }
+                input[type="text"]:focus{
+                    width: 400px;
+                    height: 40px;
+                    vertical-align: middle;
+                    border-radius: 50px;
+                    border: none;
+                    box-shadow: 5%;
+                    transform: scale(1.1);
+                    outline: none;
+                    font-size: 20px;
+                }
             }
+                
+            
+            
         }
 
         .submit-button{
@@ -146,6 +159,20 @@ $font: arial, sans-serif;
 
     
 }
+
+.header{
+    position: relative;
+    margin-top: 250px;
+
+    .google-image{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+}
+
+
 
 .section{
     position: relative;

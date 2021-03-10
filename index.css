@@ -72,18 +72,6 @@
           transform: scale(1.1);
 }
 
-.header {
-  position: relative;
-  margin-top: 250px;
-}
-
-.header .google-image {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .form {
   position: relative;
   margin-top: 70px;
@@ -98,34 +86,64 @@
   margin: 20px;
 }
 
-.form .form-1 .search-bar input[type="text"] {
-  width: 500px;
+.form .form-1 .search-bar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form .form-1 .search-bar .bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.form .form-1 .search-bar .bar .icon {
+  top: 50%;
+  left: 0;
+  height: 30px;
+  width: 15px;
+}
+
+.form .form-1 .search-bar .bar input[type="text"] {
+  margin-left: 15px;
+  font-size: 20px;
+  width: 400px;
   height: 40px;
   vertical-align: middle;
   border-radius: 50px;
   border: 1px solid black;
   -webkit-transition: all 0s ease-in-out;
   transition: all 0s ease-in-out;
+  border: none;
 }
 
-.form .form-1 .search-bar input[type="text"]:hover {
-  width: 500px;
+.form .form-1 .search-bar .bar input[type="text"]:hover {
+  width: 400px;
   height: 40px;
   vertical-align: middle;
   border-radius: 50px;
-  border: 1px solid black;
+  border: none;
   -webkit-box-shadow: 5%;
           box-shadow: 5%;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.form .form-1 .search-bar input[type="text"]:focus {
-  width: 500px;
+.form .form-1 .search-bar .bar input[type="text"]:focus {
+  width: 400px;
   height: 40px;
   vertical-align: middle;
   border-radius: 50px;
-  border: 1px solid black;
+  border: none;
   -webkit-box-shadow: 5%;
           box-shadow: 5%;
   -webkit-transform: scale(1.1);
@@ -158,6 +176,18 @@
   border: none;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.header {
+  position: relative;
+  margin-top: 250px;
+}
+
+.header .google-image {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .section {
