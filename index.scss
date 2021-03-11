@@ -40,7 +40,32 @@ $font: 'Noto Sans ', sans-serif;
             color: rgb(151, 151, 151);
         }
 
-        button{
+        .drop-menu{
+            margin-left: 10px;
+            padding: 5px 8px;
+            background-color:white;
+            color: gray;
+            font-family: $font;
+            border: none;
+            outline: none;
+            border-radius: 50%;
+            transition: all 0s ease-in-out;
+            
+            
+        }
+
+        .drop-menu:hover{
+            margin-left: 10px;
+            padding: 5px 8px;
+            background-color:#fff;
+            color: gray;
+            font-family: $font;
+            border: none;
+            outline: none;
+            transform: scale(1.7);
+        }
+
+        .sign-in{
             margin-left: 10px;
             padding: 5px 8px;
             background-color: dodgerblue;
@@ -51,7 +76,7 @@ $font: 'Noto Sans ', sans-serif;
             transition: all 0s ease-in-out;
         }
 
-        button:hover{
+        .sign-in:hover{
             margin-left: 10px;
             padding: 5px 8px;
             background-color:dodgerblue;

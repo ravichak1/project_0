@@ -48,7 +48,32 @@
   color: #979797;
 }
 
-.nav .nav-bar button {
+.nav .nav-bar .drop-menu {
+  margin-left: 10px;
+  padding: 5px 8px;
+  background-color: white;
+  color: gray;
+  font-family: "Noto Sans ", sans-serif;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+}
+
+.nav .nav-bar .drop-menu:hover {
+  margin-left: 10px;
+  padding: 5px 8px;
+  background-color: #fff;
+  color: gray;
+  font-family: "Noto Sans ", sans-serif;
+  border: none;
+  outline: none;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+.nav .nav-bar .sign-in {
   margin-left: 10px;
   padding: 5px 8px;
   background-color: dodgerblue;
@@ -60,7 +85,7 @@
   transition: all 0s ease-in-out;
 }
 
-.nav .nav-bar button:hover {
+.nav .nav-bar .sign-in:hover {
   margin-left: 10px;
   padding: 5px 8px;
   background-color: dodgerblue;
