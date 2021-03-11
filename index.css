@@ -36,16 +36,16 @@
   text-decoration: none;
   cursor: pointer;
   padding-left: 20px;
-  font-family: arial, sans-serif;
-  color: dimgray;
+  font-family: "Noto Sans ", sans-serif;
+  color: #72767a;
 }
 
 .nav .nav-bar a:hover {
   text-decoration: underline;
   cursor: pointer;
   padding-left: 20px;
-  font-family: arial, sans-serif;
-  color: dimgray;
+  font-family: "Noto Sans ", sans-serif;
+  color: #979797;
 }
 
 .nav .nav-bar button {
@@ -53,7 +53,7 @@
   padding: 5px 8px;
   background-color: dodgerblue;
   color: white;
-  font-family: arial, sans-serif;
+  font-family: "Noto Sans ", sans-serif;
   border: none;
   outline: none;
   -webkit-transition: all 0s ease-in-out;
@@ -65,7 +65,7 @@
   padding: 5px 8px;
   background-color: dodgerblue;
   color: white;
-  font-family: arial, sans-serif;
+  font-family: "Noto Sans ", sans-serif;
   border: none;
   outline: none;
   -webkit-transform: scale(1.1);
@@ -75,104 +75,114 @@
 .form {
   position: relative;
   margin-top: 70px;
-}
-
-.form .form-1 {
-  position: absolute;
   left: 48%;
+  width: 400px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 50px;
-  margin: 20px;
 }
 
-.form .form-1 .search-bar {
+.form .form-1 .form-2 .search-bar {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.form .form-1 .search-bar .bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border: 1px solid black;
-  padding: 10px;
+  border: 1px solid #dfe1e5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-radius: 50px;
+  width: 500px;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 5px 10px -5px #000;
+          box-shadow: 0 5px 10px -5px #000;
 }
 
-.form .form-1 .search-bar .bar .icon {
-  top: 50%;
-  left: 0;
-  height: 30px;
-  width: 15px;
-}
-
-.form .form-1 .search-bar .bar input[type="text"] {
-  margin-left: 15px;
-  font-size: 20px;
-  width: 400px;
-  height: 40px;
-  vertical-align: middle;
-  border-radius: 50px;
-  border: 1px solid black;
-  -webkit-transition: all 0s ease-in-out;
-  transition: all 0s ease-in-out;
-  border: none;
-}
-
-.form .form-1 .search-bar .bar input[type="text"]:hover {
-  width: 400px;
-  height: 40px;
-  vertical-align: middle;
-  border-radius: 50px;
-  border: none;
-  -webkit-box-shadow: 5%;
-          box-shadow: 5%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.form .form-1 .search-bar .bar input[type="text"]:focus {
-  width: 400px;
-  height: 40px;
-  vertical-align: middle;
-  border-radius: 50px;
-  border: none;
-  -webkit-box-shadow: 5%;
-          box-shadow: 5%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  outline: none;
-  font-size: 20px;
-}
-
-.form .form-1 .submit-button {
+.form .form-1 .form-2 .search-bar .icon {
   position: absolute;
-  margin: 9px;
-  left: 12%;
+  width: 34px;
+  height: 50%;
+  top: 30%;
+  left: 15px;
+  color: #c0c4c7;
+  border: none;
+  background-color: #fff;
+  border-radius: 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.form .form-1 .submit-button input[type="submit"] {
+.form .form-1 .form-2 .search-bar .text {
+  position: absolute;
+  left: 40px;
+  height: 34px;
+  width: 80%;
+  border: none;
+  font-size: 20px;
+  outline: none;
+  font-family: "Noto Sans ", sans-serif;
+}
+
+.form .form-1 .form-2 .search-bar .icon-mic {
+  position: absolute;
+  width: 20px;
+  height: 50%;
+  top: 30%;
+  right: 5px;
+  border: none;
+  color: blue;
+  background-color: #fff;
+  border-radius: 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+}
+
+.form .form-1 .form-2 .search-bar .icon-mic:hover {
+  position: absolute;
+  width: 20px;
+  height: 50%;
+  top: 30%;
+  right: 5px;
+  border: none;
+  color: blue;
+  background-color: #fff;
+  border-radius: 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.form .submit-button {
+  position: absolute;
+  left: 12%;
+  margin-top: 10px;
+}
+
+.form .submit-button input[type="submit"] {
   margin: 10px;
   width: 150px;
   height: 30px;
   border-radius: 50px;
+  font-family: "Noto Sans ", sans-serif;
+  color: #3c4043;
+  background-color: #f8f9fa;
   border: none;
   -webkit-transition: all 0s ease-in-out;
   transition: all 0s ease-in-out;
 }
 
-.form .form-1 .submit-button input[type="submit"]:hover {
+.form .submit-button input[type="submit"]:hover {
   margin: 10px;
   width: 150px;
   height: 30px;
   border-radius: 50px;
+  color: #3c4043;
+  background-color: #f8f9fa;
   border: none;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -193,6 +203,7 @@
 .section {
   position: relative;
   margin-top: 120px;
+  font-family: "Noto Sans ", sans-serif;
 }
 
 .section .section-1 {
@@ -204,8 +215,9 @@
 }
 
 .section .section-1 p {
-  font-family: arial, sans-serif;
+  font-family: "Noto Sans ", sans-serif;
   font-size: 15px;
+  color: #3c4043;
 }
 
 .section .section-1 p a {
@@ -221,7 +233,8 @@ footer {
   width: 100%;
   max-width: 100%;
   bottom: 0;
-  background-color: #e4e4e4;
+  background-color: #f2f2f2;
+  font-family: "Noto Sans ", sans-serif;
 }
 
 footer .container1 {

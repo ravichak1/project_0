@@ -1,4 +1,4 @@
-$font: arial, sans-serif;
+$font: 'Noto Sans ', sans-serif;
 
 *{
     margin: 0;
@@ -29,7 +29,7 @@ $font: arial, sans-serif;
             cursor: pointer;
             padding-left: 20px;
             font-family: $font;
-            color: dimgray;
+            color: #72767a;
         }
 
         a:hover{
@@ -37,7 +37,7 @@ $font: arial, sans-serif;
             cursor: pointer;
             padding-left: 20px;
             font-family: $font;
-            color: dimgray;
+            color: rgb(151, 151, 151);
         }
 
         button{
@@ -67,98 +67,115 @@ $font: arial, sans-serif;
 .form{
     position: relative;
     margin-top: 70px;
+    left: 48%;
+    width: 400px;
+    transform: translate(-50%,-50%);
+    
+    
 
     .form-1{
-        position: absolute;
-        left: 48%;
-        transform: translate(-50%,-50%);
-        height: 50px;
-        margin: 20px;
-
-        .search-bar{
-
-            position: relative;
-            display: flex;
-            
-
-            .bar{
+        .form-2{
+            .search-bar{
+                position: relative;
                 display: flex;
-                flex-direction: row;
-                border: 1px solid black;
-                padding: 10px;
+                border: 1px solid #dfe1e5;
+                justify-content: space-between;
                 border-radius: 50px;
+                width: 500px;
+                height: 45px;
+                align-items: center;
+               
+                box-shadow: 0 5px 10px -5px #000;
+                
 
                 .icon{
-                    top: 50%;
-                    left: 0;
-                    height: 30px;
-                    width: 15px;
+                    position: absolute;
+                    width: 34px;
+                    height: 50%;
+                    top: 30%;
+                    left: 15px;
+                    color:#c0c4c7;
+                    border: none;
+                    background-color: #fff;
+                    border-radius: 0;
+                    align-content: center;
+                    
                 }
 
-                input[type="text"]{
-                    margin-left: 15px;
+                .text{
+                    position: absolute;
+                    left: 40px;
+                    height: 34px;
+                    width: 80%;
+                    border: none;
                     font-size: 20px;
-                    width: 400px;
-                    height: 40px;
-                    vertical-align: middle;
-                    border-radius: 50px;
-                    border: 1px solid black;
-                    transition: all 0s ease-in-out;
-                    border: none;
-                }
-    
-                input[type="text"]:hover{
-                    width: 400px;
-                    height: 40px;
-                    vertical-align: middle;
-                    border-radius: 50px;
-                    border: none;
-                    box-shadow: 5%;
-                    transform: scale(1.1);
-                }
-                input[type="text"]:focus{
-                    width: 400px;
-                    height: 40px;
-                    vertical-align: middle;
-                    border-radius: 50px;
-                    border: none;
-                    box-shadow: 5%;
-                    transform: scale(1.1);
                     outline: none;
-                    font-size: 20px;
+                    font-family: $font;
                 }
-            }
-                
-            
-            
-        }
 
-        .submit-button{
-            position: absolute;
-            margin: 9px;
-            left: 12%;
-            input[type="submit"]{
-                margin: 10px;
-                width: 150px;
-                height: 30px;
-                border-radius: 50px;
-                border: none;
-                transition: all 0s ease-in-out;
-            }
+                .icon-mic{
+                    position: absolute;
+                    width: 20px;
+                    height: 50%;
+                    top: 30%;
+                    right: 5px;
+                    border: none;
+                    color: blue;
+                    background-color: #fff;
+                    border-radius: 0;
+                    align-content: center;
+                    transition: all 0s ease-in-out;
+                }
 
-            input[type="submit"]:hover{
-                margin: 10px;
-                width: 150px;
-                height: 30px;
-                border-radius: 50px;
-                border: none;
-                transform: scale(1.1);
+                .icon-mic:hover{
+                    position: absolute;
+                    width: 20px;
+                    height: 50%;
+                    top: 30%;
+                    right: 5px;
+                    border: none;
+                    color: blue;
+                    background-color: #fff;
+                    border-radius: 0;
+                    align-content: center;
+                    transform: scale(1.1);
+                }
             }
         }
     }
 
-    
+    .submit-button{
+        position: absolute;
+        left: 12%;
+        margin-top: 10px;
+        
+        input[type="submit"]{
+            margin: 10px;
+            width: 150px;
+            height: 30px;
+            border-radius: 50px;
+            font-family: $font;
+            color: #3c4043;
+            background-color: #f8f9fa;
+            border: none;
+            transition: all 0s ease-in-out;
+        }
+
+        input[type="submit"]:hover{
+            margin: 10px;
+            width: 150px;
+            height: 30px;
+            border-radius: 50px;
+            color: #3c4043;
+            background-color: #f8f9fa;
+            border: none;
+            transform: scale(1.1);
+        }
+    }
 }
+
+    
+
 
 .header{
     position: relative;
@@ -174,9 +191,11 @@ $font: arial, sans-serif;
 
 
 
+
 .section{
     position: relative;
     margin-top: 120px;
+    font-family: $font;
     
     .section-1{
         position: absolute;
@@ -187,6 +206,7 @@ $font: arial, sans-serif;
         p{
             font-family: $font;
             font-size: 15px;
+            color: #3c4043;
 
             a{
                 text-decoration: none;
@@ -207,7 +227,8 @@ footer{
     width: 100%;
     max-width: 100%;
     bottom: 0;
-    background-color: #e4e4e4;
+    background-color: #f2f2f2;
+    font-family: $font;
 
     .container1{
         display: grid;
